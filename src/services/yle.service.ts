@@ -7,8 +7,7 @@ export default class YleService {
   constructor() {}
 
   public getNews(): Observable<any> {
-    console.log('Getting news...');
-    let options = {
+    const options = {
       uri: `https://feeds.yle.fi/uutiset/v1/recent.rss?publisherIds=YLE_UUTISET`,
       transform: body => {
         return cheerio.load(body, { xmlMode: true });
