@@ -1,16 +1,7 @@
-# nodejs-dynamodb-restapi
+# TS Node.js Express basic starter project
 
-Starter project for TypScript Node.js REST API project for DynamoDB.
+TypeScript + Node.js, fetch news from YLE. Demo at https://getstuffapi.herokuapp.com/yle
 
-## First
+## Run local
 
-This app expects you to have `testusers` table in DynamoDB with hash key string `id`.
-
-## Running project locally
-
-Create a `.env` file with following AWS credentials
-
-- AWS_ACCESS_KEY_ID
-- AWS_SECRET_ACCESS_KEY
-
-Use `npm start` to launch server.
+Type `npm run dev` to run server locally. Open `http://localhost:3000/yle` to get news from YLE as json.
